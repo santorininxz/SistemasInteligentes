@@ -1,0 +1,2 @@
+Trabalho pela Proz, sobre Sistemas Inteligentes, onde foi criado um site com HTML, CSS e JavaScript explicando
+sobre Inteligência Artificial e Redes Neurais, na qual um landbot(chatbot) também foi criado.

@@ -1,0 +1,137 @@
+/* Definições gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilizando o container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+/* Estilizando o parágrafo */
+.paragrafo {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.paragrafo br {
+    margin-bottom: 10px;
+}
+
+/* Listagem numerada */
+.paragrafo ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.paragrafo li {
+    margin-bottom: 15px;
+}
+
+/* Links do projeto */
+.botao {
+    display: inline-block;
+    background-color: #4A90E2;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 5px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.botao:hover {
+    background-color: #357ABD;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .paragrafo {
+        font-size: 1rem;
+    }
+
+    .botao {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+/* Comunicação por email */
+/* Formulário */
+.formulario-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-titulo {
+    font-size: 2rem;
+    color: #4A90E2;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+.formulario-botao button {
+    background-color: #4A90E2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.formulario-botao button:hover {
+    background-color: #357ABD;
+}
+
+.bot {
+    text-align: center;
+    margin-top: 20px;
+}

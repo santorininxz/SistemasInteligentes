@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=P, initial-scale=1.0">
+    <title> Redes Neurais</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="titulo">O que são as Redes Neurais?</h1>
+        <p class="paragrafo"> Redes Neurais são sistemas computacionais inspirados
+            no funcionamento do cérebro humano, rojetados para reconhecer padrões e aprender com dados. Elas são um
+            componente fundamental no campo do aprendizado de máquina e especialmente em deep learning (aprendizado
+            profundo). O objetivo das redes neurais é simular a forma como os seres humanos e outros animais processam
+            informações, com o intuito de realizar tarefas complexas como reconhecimento de imagem, fala, tradução de
+            idiomas e muito mais. <br>
+            As redes neurais tem sido estudadas desde 1940 com o Perceptron; no entanto
+            seu desenvolvimento foi limitado pelo poder computacional da época. Com o aumento do poder computacional,
+            especialmente com o uso de GPUs, as redes neurais
+            emergiram como uma poderosa ferramenta. Hoje, elas são aplicadas com sucesso em diversos
+            problemas sob o rótulo de deep learning.
+        </p>
+
+        <h1 class="titulo"> Qual é a estrutura de uma Rede Neural?</h1>
+        <p class="paragrafo">
+            Uma rede neural é composta por unidades chamadas neurônios (ou nós), organizadas em camadas. A estrutura
+            básica de uma rede neural é a seguinte: <br> </p>
+
+        <h3 class="subtitulo">Camada de Entrada (Input Layer):</h3>
+        <p class="paragrafo"> Esta camada recebe os dados de entrada. Os dados podem ser números, imagens, sons, ou
+            outros tipos de
+            informações. <br>
+            Cada neurônio nesta camada representa uma característica do dado de entrada. Por exemplo, em uma rede neural
+            para reconhecimento de imagem, cada neurônio pode representar um pixel da imagem. <br> <br></p>
+
+        <h3 class="subtitulo">Camadas Ocultas (Hidden Layers):</h3>
+        <p class="paragrafo"> As camadas ocultas são compostas por neurônios que processam as informações recebidas da
+            camada de entrada.
+            Cada neurônio em uma camada oculta recebe entradas de todos os neurônios da camada anterior, aplica uma
+            função de ativação (que introduz não-linearidade) e envia sua saída para a próxima camada. <br>
+            O número de camadas ocultas pode variar, e as redes neurais mais profundas (com muitas camadas ocultas) são
+            chamadas de redes neurais profundas ou deep learning. <br><br></p>
+
+        <h3 class="subtitulo">Camada de Saída (Output Layer):</h3>
+        <p class="paragrafo"> A camada de saída fornece o resultado final da rede neural. <br>
+            O número de neurônios nesta camada depende do tipo de tarefa que a rede realiza. Por exemplo, em uma tarefa
+            de classificação de imagem com 10 categorias, a camada de saída terá 10 neurônios, representando a
+            probabilidade de cada categoria. <br></p>
+
+        <h1 class="titulo">Como as Redes Neurais funcionam?</h1>
+        <p class="paragrafo">As redes neurais são amplamente usadas em várias aplicações, incluindo:
+
+            Reconhecimento de Imagem: Identificação e classificação de objetos em imagens, como reconhecimento facial ou
+            identificação de doenças a partir de imagens médicas.
+            Processamento de Linguagem Natural (PLN): Tarefas como tradução automática, chatbots, análise de sentimentos
+            e geração de texto.
+            Reconhecimento de Fala: Sistemas de transcrição de voz e assistentes virtuais, como Siri e Google Assistant.
+            Análise de Dados e Previsões: Previsão de vendas, análise de dados financeiros, e sistemas de recomendação.
+            Condução Autônoma: Veículos autônomos usam redes neurais para interpretar os dados dos sensores e tomar
+            decisões em tempo real.</p>
+
+        <h1 class="titulo">Quais os tipos de Redes Neurais? Qual a sua funcionalidade?</h1>
+
+        <div class="quadrado">
+
+            <h2 class="titulo2">Multilayer Perceptron(MLP)</h2>
+            <p class="paragrafo">Multilayer Perceptron (MLP) é um tipo de rede neural artificial, uma das arquiteturas
+                mais
+                fundamentais e amplamente usadas em aprendizado de máquina. Ela é composta por várias camadas de
+                neurônios,
+                sendo chamada de "multicamadas" devido à presença de camadas ocultas entre a camada de entrada e a
+                camada de
+                saída. O MLP é usado principalmente para tarefa de classificação e regressão, podendo ser aplicado em
+                uma
+                variedade de domínios, como reconhecimento de padrões, previsão de dados, e até mesmo em sistemas de
+                recomendação.</p>
+            <h2 class="titulo2">Redes Convolucionais (CNN)</h2>
+            <p class="paragrafo">Redes Convolucionais (CNNs, do inglês Convolutional Neural Networks) são um tipo de
+                rede neural artificial especialmente eficaz em tarefas de processamento de imagens e dados espaciais.
+                Elas são compostas por camadas que realizam operações de convolução, as quais ajudam a extrair
+                características importantes da entrada, como bordas, texturas e pad
+                rões.</p>
+            <h2 class="titulo2">Redes Recorrentes(RNN)</h2>
+            <p class="paragrafo">
+                Redes Neurais Recorrentes (RNNs) são projetadas para lidar com dados sequenciais, como texto, áudio ou
+                séries temporais, e possuem "memória" para considerar o contexto passado ao processar novas entradas.
+                Elas são usadas em tarefas como tradução automática, análise de sentimentos e previsão de séries
+                temporais. No entanto, as RNNs tradicionais têm dificuldades em aprender dependências de longo prazo
+                devido ao problema do desvanecimento ou explosão do gradiente. Variantes como LSTMs e GRUs foram
+                desenvolvidas para melhorar o desempenho nessas situações.
+            </p>
+            <h2 class="titulo2"> Long Short-term memory(LSTM)</h2>
+            <p class="paragrafo">
+                Long Short-Term Memory (LSTM) é um tipo de rede neural recorrente (RNN) projetada para resolver o
+                problema de aprendizado de dependências de longo prazo em sequências de dados. Diferente das RNNs
+                tradicionais, as LSTMs possuem uma estrutura especial de "células" que incluem portas (gates) para
+                controlar o fluxo de informações. Essas portas determinam quais informações são armazenadas, quais são
+                esquecidas e quais são passadas adiante, permitindo que as LSTMs mantenham e utilizem informações
+                importantes ao longo de sequências mais longas. Isso torna as LSTMs eficazes em tarefas como tradução
+                automática, reconhecimento de fala e previsão de séries temporais.
+            </p>
+
+            <h2 class="titulo2">Máquinas de Boltzmann</h2>
+            <p class="paragrafo">
+                Máquinas de Boltzmann (MB) são um tipo de rede neural estocástica usada para modelar distribuições de
+                probabilidade e aprender representações dos dados. Elas consistem em unidades (neurônios) conectadas por
+                links, e cada unidade pode ter um estado ativo ou inativo, com a probabilidade de seu estado sendo
+                determinada pela interação com as outras unidades.As Máquinas de Boltzmann são usadas principalmente
+                para aprendizado não supervisionado, extração de características e pré-treinamento de redes neurais
+                profundas
+            </p>
+            <h2 class="titulo2">Deep belief network</h2>
+            <p class="paragrafo">
+                Deep Belief Network (DBN) é um tipo de rede neural profunda composta por várias camadas de Máquinas de
+                Boltzmann Restritas (RBM). Ela é projetada para aprender representações hierárquicas dos dados, ou seja,
+                extrair características de níveis mais simples para mais complexos à medida que os dados passam pelas
+                camadas da rede. É treinado de forma não supervisionada em duas etapas: pré-treinamento, onde cada
+                camada
+                é treinada individualmente e todas as conexões são ajustadas para capturar padrões e características dos
+                dados
+                de entrada, e ajuste fino, onde após o pré-treinamento, o DBN é refinado usando aprendizado
+                supervisonado, com
+                uma retropropagação para otimizar a rede para uma tarefa especifica, como classificação. O DBN é usado
+                principalmente em tarefas de reconhecimento de padrões, como reconhecimento de imagens e voz, e é
+                considerado uma das primeiras arquiteturas bem-sucedidas para redes neurais profundas.
+            </p>
+            <h2 class="titulo2">Deep auto-encoders</h2>
+            <p class="paragrafo">
+                O <b>Deep Autoencoder</b> é um tipo de rede neural profunda usada para aprender uma representação
+                compacta
+                e eficiente dos dados, geralmente para fins de redução de dimensionalidade ou aprendizado não
+                supervisionado. Ele é composto por duas partes principais: <br>
+
+                1. <b>Codificador (Encoder)</b>: Comprime a entrada em uma representação de dimensionalidade menor,
+                chamada
+                de "código" ou "vetor latente". O codificador aprende a extrair as características mais importantes dos
+                dados. <br>
+
+                2. <b>Decodificador (Decoder)</b>: Reconstrói a entrada original a partir da representação comprimida
+                gerada pelo codificador, tentando minimizar a diferença entre a entrada original e a reconstruída. <br>
+
+                O objetivo do Deep Autoencoder é minimizar a *perda de reconstrução*, ou seja, a diferença entre a
+                entrada original e a saída reconstruída. Ele é usado para tarefas como redução de ruído, compressão de
+                dados e extração de características. Além disso, pode ser útil em áreas como detecção de anomalias e
+                aprendizado de representações para outras tarefas de machine learning.
+            </p>
+            <h2 class="titulo2">Generate adversarial network</h2>
+            <p class="paragrafo">
+                Generative Adversarial Network (GAN) é um modelo de aprendizado de máquina que consiste em duas
+                redes neurais competindo entre si: o <i>gerador</i> e o <i>discriminador</i>. Elas são treinadas
+                simultaneamente de forma adversarial (ou seja, uma tentando enganar a outra). <br>
+
+                1. <b>Gerador</b>: O objetivo do gerador é criar dados falsos (como imagens, vídeos ou textos) que sejam
+                semelhantes aos dados reais. Ele tenta "enganar" o discriminador, produzindo resultados cada vez mais
+                realistas. <br>
+
+                2. <b>Discriminador</b>: O discriminador tem a tarefa de distinguir entre dados reais (do conjunto de
+                treinamento) e os dados gerados pelo gerador. Ele tenta identificar se uma amostra é verdadeira ou
+                falsa. <br>
+                Durante o treinamento, o gerador e o discriminador se melhoram continuamente: o gerador tenta enganar o
+                discriminador e o discriminador tenta melhorar sua capacidade de distinguir o real do falso. Com o
+                tempo, o gerador se torna muito bom em criar dados que são quase indistinguíveis dos reais. <br>
+
+                GANs são amplamente utilizadas para criar imagens realistas, deepfakes, arte gerada por IA, e até em
+                tarefas de síntese de dados, como a criação de textos ou música.
+            </p>
+
+        </div>
+        <a href="pag1.html" class="botao">Página 1</a>
+        <a href="pag3.html" class="botao">Página 3</a>
+    </div>
+</body>
+<script>
+    (function (w, d, t, u, n, s) {
+        w[n] = w[n] || [];
+        s = d.createElement(t);
+        s.async = true;
+        s.src = u;
+        var e = d.getElementsByTagName(t)[0];
+        e.parentNode.insertBefore(s, e);
+    })(window, document, 'script', 'https://landbot.online/v3/H-2706377-RRKNJY5QG6M5Q1CG/index.html', 'landbot');
+</script>
+
+</html>
